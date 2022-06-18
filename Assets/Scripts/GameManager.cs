@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject doggoMouth;
     public GameObject curtainEdge;
     public GameObject roomLight;
     public GameObject Guy;
@@ -24,14 +23,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Space) && isTouchingCurtain)
-        //{
-        //    if (doggoMouth.transform.position.x <= -5.4 &&
-        //        doggoMouth.transform.position.x >= -1)
-        //    {
-                
-        //    }
-        //}
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+
+
+        }
 
         portionMoved = Mathf.Abs(curtainEdge.transform.position.x - (-1)) / 6.4f;
         FindObjectOfType<CurtainDraw>().updateCurtain(portionMoved);
@@ -44,8 +40,5 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void setTouchingCurtain (bool touchingCurtain)
-    {
-        isTouchingCurtain = touchingCurtain;
-    }
+
 }
