@@ -7,7 +7,6 @@ public class Dream_DoggoMovement : MonoBehaviour
 
     public float walkSpeed = 1f;
     float jumpForce = 2f;
-    bool jump = false;
     private bool facingRight;
     private float xAxis;
     private float yAxis;
@@ -58,12 +57,6 @@ public class Dream_DoggoMovement : MonoBehaviour
         // this is for movement
         transform.position += xAxis * walkSpeed * Vector3.right;
         transform.position += yAxis * jumpForce * Vector3.up;
-        
-        if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-        }
-
 
         body.MovePosition(body.position + new Vector2(xAxis * walkSpeed, yAxis * jumpForce) * Time.fixedDeltaTime);
 
