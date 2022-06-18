@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BadThoughtSpawner : MonoBehaviour
+public class BadThoughtController : MonoBehaviour
 {
     public Rigidbody2D thought;
     private void OnCollisionEnter2D (Collision2D collision) {
