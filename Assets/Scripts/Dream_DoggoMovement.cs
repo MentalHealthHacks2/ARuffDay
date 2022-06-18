@@ -1,44 +1,98 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Dream_DoggoMovement : MonoBehaviour
 {
-    public Dream_Character2DController controller;
     public Animator animator;
     public Rigidbody2D body;
-    public float runSpeed = 10f;
 
-    float horizontalMove = 0f;
-    float jumpForce = 20f;
+    public float walkSpeed = 1f;
+    float jumpForce = 2f;
     bool jump = false;
+    private bool facingRight;
+    private float xAxis;
+    private float yAxis;
+    private float groundY;
+    private Vector2 screenBounds;
+    private float width;
+    private float height;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        facingRight = false;
+        groundY = Input.GetAxis("Vertical") - 1;
+        screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));    
+        width = GetComponent<SpriteRenderer>().bounds.size.x;
+        height = GetComponent<SpriteRenderer>().bounds.size.y;
     }
 
     // Update is called once per frame
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        GetMovementInputs();
 
-		if (Input.GetButtonDown("space")) //Jump
-		{
-			jump = true;
-		}
+        Move();
+    }
+
+    // Update is called once per frame
+    void LateUpdate(){
+        Vector3 viewPos = transform.position;
+        viewPos.y = Mathf.Clamp(viewPos.y, groundY, screenBounds.y);
+        viewPos.y = Mathf.Clamp(viewPos.y, groundY, screenBounds.y);
+        transform.position = viewPos;
+    }
+
+    private void GetMovementInputs()
+    {
+        xAxis = Input.GetAxis("Horizontal");
+        yAxis = Input.GetAxis("Vertical");
     }
 
     public void OnLanding() {
         animator.SetBool("isJumping", false);   
     }
 
-     void FixedUpdate ()
-	{
-		// Move our character
-		controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
-		jump = false;
-	} 
+    private void Move()
+    {
+        // this is for movement
+        transform.position += xAxis * walkSpeed * Vector3.right;
+        transform.position += yAxis * jumpForce * Vector3.up;
+        
+        if (Input.GetButtonDown("Jump"))
+        {
+            jump = true;
+        }
+
+
+        body.MovePosition(body.position + new Vector2(xAxis * walkSpeed, yAxis * jumpForce) * Time.fixedDeltaTime);
+
+        if (xAxis > 0 && !facingRight)
+        {
+            Flip();
+        }
+        else if (xAxis < 0 && facingRight)
+        {
+            Flip();
+        }
+
+
+
+        if (transform.position.y > groundY) {
+            animator.SetBool("isJumping", true);
+        } else {
+            animator.SetBool("isJumping", false);
+        }
+    }
+
+    // controls the scale of sprite and flips it
+    private void Flip()
+    {
+        facingRight = !facingRight;
+
+        // save the current state of the localScale
+        Vector3 tempScale = transform.localScale;
+        tempScale.x *= -1;
+        transform.localScale = tempScale;
+    }
 }
