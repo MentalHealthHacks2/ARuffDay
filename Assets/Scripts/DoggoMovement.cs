@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class doggoMovement : MonoBehaviour
+public class DoggoMovement : MonoBehaviour
 {
 
     public float walkSpeed;
