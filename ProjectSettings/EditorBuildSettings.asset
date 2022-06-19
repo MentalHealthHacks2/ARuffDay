@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HappyScene.unity
     guid: 26e0eb6b75a6fa64f8af3fd0df77870c
+  - enabled: 1
+    path: Assets/Scenes/FindingDoggo.unity
+    guid: 567e306a92be46842851f30038c5c328
   m_configObjects: {}
