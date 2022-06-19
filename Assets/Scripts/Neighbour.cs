@@ -7,6 +7,7 @@ public class Neighbour : MonoBehaviour
 {
     public GameObject ownerComes;
     public GameObject help;
+    public GameObject dogNeigh;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class Neighbour : MonoBehaviour
     IEnumerator OfferHelp() {
         yield return new WaitForSeconds(2);
         ownerComes.gameObject.SetActive(false);
-        this.gameObject.SetActive(false);
+        dogNeigh.gameObject.SetActive(false);
         help.gameObject.SetActive(true);
         GoNextScene();
     }
