@@ -6,6 +6,11 @@ public class DeskFading : MonoBehaviour
 {
     private float startTime;
 
+    private void Awake()
+    {
+        startTime = Time.time;
+    }
+
     // Update is called once per frame
     void Update()
     {
