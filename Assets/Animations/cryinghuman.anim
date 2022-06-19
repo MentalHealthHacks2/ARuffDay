@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Doggo_jump
+  m_Name: cryinghuman
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 4794935877173102222, guid: 4e1626dbf08118449af39673251c2d05, type: 3}
+      value: {fileID: -5181037484633232981, guid: 33679977f5ca2d9479a2749639efd69a, type: 3}
     - time: 0.43333334
-      value: {fileID: 7986920708568322715, guid: 4e1626dbf08118449af39673251c2d05, type: 3}
-    - time: 0.8333333
-      value: {fileID: 7986920708568322715, guid: 4e1626dbf08118449af39673251c2d05, type: 3}
+      value: {fileID: -6056412550339533281, guid: 33679977f5ca2d9479a2749639efd69a, type: 3}
+    - time: 0.73333335
+      value: {fileID: -6056412550339533281, guid: 33679977f5ca2d9479a2749639efd69a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,15 +44,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 4794935877173102222, guid: 4e1626dbf08118449af39673251c2d05, type: 3}
-    - {fileID: 7986920708568322715, guid: 4e1626dbf08118449af39673251c2d05, type: 3}
-    - {fileID: 7986920708568322715, guid: 4e1626dbf08118449af39673251c2d05, type: 3}
+    - {fileID: -5181037484633232981, guid: 33679977f5ca2d9479a2749639efd69a, type: 3}
+    - {fileID: -6056412550339533281, guid: 33679977f5ca2d9479a2749639efd69a, type: 3}
+    - {fileID: -6056412550339533281, guid: 33679977f5ca2d9479a2749639efd69a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.84999996
+    m_StopTime: 0.75
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

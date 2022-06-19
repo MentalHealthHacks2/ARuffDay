@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: 89bb2e4e7b25d0f4184fd00f924f6b63
+guid: 33679977f5ca2d9479a2749639efd69a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9028087476897026612
-    second: walkingdog_0
+      213: -5181037484633232981
+    second: cryhuman_0
   - first:
-      213: 3096281448283122035
-    second: walkingdog_1
-  - first:
-      213: -3148030581698958682
-    second: walkingdog_2
-  - first:
-      213: 199974830054743530
-    second: walkingdog_3
-  - first:
-      213: -7753571030125099345
-    second: walkingdog_4
-  - first:
-      213: -5201884612148676012
-    second: walkingdog_5
+      213: -6056412550339533281
+    second: cryhuman_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walkingdog_0
+      name: cryhuman_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,41 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43299953ab53a4d70800000000000000
-      internalID: 9028087476897026612
+      spriteID: ba9e378abd14918b0800000000000000
+      internalID: -5181037484633232981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdog_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3792c89829338fa20800000000000000
-      internalID: 3096281448283122035
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkingdog_2
+      name: cryhuman_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,71 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6aa64cb6dd2ff44d0800000000000000
-      internalID: -3148030581698958682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkingdog_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aed9e656c0476c200800000000000000
-      internalID: 199974830054743530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkingdog_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa642a07a38c56490800000000000000
-      internalID: -7753571030125099345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkingdog_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45abe4a81813fc7b0800000000000000
-      internalID: -5201884612148676012
+      spriteID: f166bcbafdc43fba0800000000000000
+      internalID: -6056412550339533281
       vertices: []
       indices: 
       edges: []
