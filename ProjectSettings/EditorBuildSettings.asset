@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Dream.unity
     guid: 3f9a59851c24f9144a2230c4ff431179
   - enabled: 1
+    path: Assets/Scenes/RunDoggo.unity
+    guid: 5d740a9362d6425478c69f6125bf73ed
+  - enabled: 1
     path: Assets/Scenes/HappyScene.unity
     guid: 26e0eb6b75a6fa64f8af3fd0df77870c
   m_configObjects: {}

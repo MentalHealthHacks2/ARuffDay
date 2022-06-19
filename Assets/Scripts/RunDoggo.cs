@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class RunDoggo : MonoBehaviour
 {
@@ -49,6 +50,20 @@ public class RunDoggo : MonoBehaviour
         yield return new WaitForSeconds(2);
         neighbourHouse.SetActive(true);
         bark.Play();
-        bark.Play();
+        GoToNextScene();
+    }
+
+    
+    public void GoToNextScene()
+    {
+        StartCoroutine(GoNextScene());
+    }
+
+    private IEnumerator GoNextScene()
+    {
+        yield return new WaitForSeconds(2); // Wait a couple seconds
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        yield return null;
     }
 }
