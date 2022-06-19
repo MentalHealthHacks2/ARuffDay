@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BadThoughtsSpawner : MonoBehaviour
 {
@@ -23,6 +24,14 @@ public class BadThoughtsSpawner : MonoBehaviour
     private float yAxis;
     private float xAxis;
 
+
+    private void Start()
+    {
+        healthBar.SetHealth(5);
+        hungerBar.SetHealth(7);
+        waterBar.SetHealth(6);
+    }
+
     public void StartGame()
     {
         timer.gameObject.SetActive(true);
@@ -33,9 +42,7 @@ public class BadThoughtsSpawner : MonoBehaviour
         yAxis = Input.GetAxis("Vertical");
         xAxis = Input.GetAxis("Horizontal");
 
-        healthBar.SetHealth(5);
-        hungerBar.SetHealth(7);
-        waterBar.SetHealth(6);
+        
     }
 
     void SpawnBadThoughts() {
@@ -65,6 +72,20 @@ public class BadThoughtsSpawner : MonoBehaviour
 
         if (collidedWithHuman == true) {
             speechBubble.SetActive(true);
+            GoToNextScene();
         }
+    }
+
+    public void GoToNextScene()
+    {
+        StartCoroutine(GoNextScene());
+    }
+
+    private IEnumerator GoNextScene()
+    {
+        yield return new WaitForSeconds(2); // Wait a couple seconds
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        yield return null;
     }
 }
