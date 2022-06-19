@@ -26,7 +26,7 @@ public class Neighbour : MonoBehaviour
         ownerComes.gameObject.SetActive(false);
         dogNeigh.gameObject.SetActive(false);
         help.gameObject.SetActive(true);
-        GoNextScene();
+        GoToNextScene();
     }
 
     public void GoToNextScene()
