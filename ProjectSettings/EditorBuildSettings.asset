@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MorningScene.unity
+    guid: 808a503549db1b04fb53403cdb9ec079
+  - enabled: 1
+    path: Assets/Scenes/FailingInSchool.unity
+    guid: 0db5ced3bb5210647ac1e1471e960e10
+  - enabled: 1
+    path: Assets/Scenes/Dream.unity
+    guid: 3f9a59851c24f9144a2230c4ff431179
   - enabled: 1
     path: Assets/Scenes/HappyScene.unity
     guid: 26e0eb6b75a6fa64f8af3fd0df77870c

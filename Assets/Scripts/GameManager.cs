@@ -1,4 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -39,11 +43,12 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             FindObjectOfType<AudioManager>().Play("DogBark");
+
             if (sceneProgress == 1)
             {
                 barkCounter++;
 
-                if (barkCounter > 5)
+                if (barkCounter >= 5)
                 {
                     sceneProgress = 2;
                 }
@@ -69,6 +74,7 @@ public class GameManager : MonoBehaviour
 
         }
 
+
         if (healthImproving)
         {
             healthBar.SetHealth((int)Mathf.Floor(Mathf.Lerp(10, 19, Time.time - startTime)));
@@ -79,12 +85,26 @@ public class GameManager : MonoBehaviour
         FindObjectOfType<CurtainDraw>().updateCurtain(portionMoved);
         myLight.intensity = (1- portionMoved) * 0.7f;
 
-        if (1 - portionMoved > 0.9)
+        if (sceneProgress == 0 && 1 - portionMoved > 0.9)
         {
             guyAnimator.SetBool("wake", true);
             sceneProgress = 1;
         }
+
+        if (sceneProgress == 3 && healthBar.slider.value == 19)
+        {
+
+            StartCoroutine(NextScene());
+            // go to next scene
+            
+        }
     }
 
+    private IEnumerator NextScene()
+    {
+        yield return new WaitForSeconds(2); // Wait a couple seconds
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
+        yield return null;
+    }
 }
