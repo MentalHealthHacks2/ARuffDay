@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
     public GameObject Guy;
 
 
-    private bool isTouchingCurtain = false;
     private float portionMoved = 0f;
     
     Light myLight;
@@ -25,13 +24,12 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-
-
+            FindObjectOfType<AudioManager>().Play("DogBark");
+            Debug.Log("Bark");
         }
 
-        portionMoved = Mathf.Abs(curtainEdge.transform.position.x - (-1)) / 6.4f;
+        portionMoved = Mathf.Abs(curtainEdge.transform.position.x - (-1)) / 6f;
         FindObjectOfType<CurtainDraw>().updateCurtain(portionMoved);
-        Debug.Log(portionMoved * 0.7f);
         myLight.intensity = (1- portionMoved) * 0.7f;
 
         if (1 - portionMoved > 0.9)
