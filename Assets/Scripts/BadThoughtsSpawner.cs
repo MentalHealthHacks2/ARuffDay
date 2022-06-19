@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BadThoughtsSpawner : MonoBehaviour
 {
@@ -71,6 +72,20 @@ public class BadThoughtsSpawner : MonoBehaviour
 
         if (collidedWithHuman == true) {
             speechBubble.SetActive(true);
+            GoToNextScene();
         }
+    }
+
+    public void GoToNextScene()
+    {
+        StartCoroutine(GoNextScene());
+    }
+
+    private IEnumerator GoNextScene()
+    {
+        yield return new WaitForSeconds(2); // Wait a couple seconds
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        yield return null;
     }
 }
