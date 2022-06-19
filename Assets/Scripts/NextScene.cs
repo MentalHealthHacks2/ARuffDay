@@ -13,7 +13,8 @@ public class NextScene : MonoBehaviour
 
     private IEnumerator GoNextScene()
     {
-        yield return new WaitForSeconds(2); // Wait a couple seconds
+        //yield return new WaitForSeconds(2); // Wait a couple seconds
+        Debug.Log("Next");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         yield return null;
