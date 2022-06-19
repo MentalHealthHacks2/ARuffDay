@@ -13,6 +13,10 @@ public class BadThoughtsSpawner : MonoBehaviour
     public GameObject speechBubble;
     public bool collidedWithHuman = false;
 
+    public StatusBarScript healthBar;
+    public StatusBarScript hungerBar;
+    public StatusBarScript waterBar;
+
     int time = 10;
     private Vector3 position;
     private float walkSpeed = 1f;
@@ -28,6 +32,10 @@ public class BadThoughtsSpawner : MonoBehaviour
         phoneDoggo.gameObject.SetActive(false);
         yAxis = Input.GetAxis("Vertical");
         xAxis = Input.GetAxis("Horizontal");
+
+        healthBar.SetHealth(5);
+        hungerBar.SetHealth(7);
+        waterBar.SetHealth(6);
     }
 
     void SpawnBadThoughts() {
