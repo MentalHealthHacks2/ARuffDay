@@ -710,7 +710,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00cca8d17e58282479c5596858bb971b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ownerComes: {fileID: 0}
+  ownerComes: {fileID: 1228124986}
+  help: {fileID: 0}
 --- !u!4 &1564947227
 Transform:
   m_ObjectHideFlags: 0
