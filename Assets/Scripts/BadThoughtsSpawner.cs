@@ -10,21 +10,27 @@ public class BadThoughtsSpawner : MonoBehaviour
     public Rigidbody2D phoneDoggo;
     public GameObject obj;
     [SerializeField] Text timer;
+    public GameObject speechBubble;
+    public bool collidedWithHuman = false;
 
     int time = 10;
     private Vector3 position;
-    private float walkingSpeed = 1f;
+    private float walkSpeed = 1f;
+    private float yAxis;
+    private float xAxis;
 
     public void StartGame()
     {
-        //StartCoroutine(SpawnBadThoughts());
+        timer.gameObject.SetActive(true);
         InvokeRepeating("SpawnBadThoughts", 0f, 2f);
         InvokeRepeating("Countdown", 0f, 1f);
         position = obj.transform.localPosition;
+        phoneDoggo.gameObject.SetActive(false);
+        yAxis = Input.GetAxis("Vertical");
+        xAxis = Input.GetAxis("Horizontal");
     }
 
     void SpawnBadThoughts() {
-        //yield return new WaitForSeconds(1);
         GameObject thought = Instantiate(badThought, position, Quaternion.identity);
         thought.gameObject.tag = "Respawn";
     }
@@ -45,8 +51,12 @@ public class BadThoughtsSpawner : MonoBehaviour
                 Destroy(clone);
             }
 
-            //phoneDoggo.gameObject.SetActive(true);
-            //phoneDoggo.MovePosition(phoneDoggo.position - new Vector2(Vector2.right * walkSpeed, yAxis) * Time.fixedDeltaTime);
+            phoneDoggo.gameObject.SetActive(true);
+            phoneDoggo.MovePosition(phoneDoggo.position - new Vector2(xAxis, yAxis) * walkSpeed * Time.fixedDeltaTime);
+        }
+
+        if (collidedWithHuman == true) {
+            speechBubble.SetActive(true);
         }
     }
 }

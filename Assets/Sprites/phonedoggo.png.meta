@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 89bb2e4e7b25d0f4184fd00f924f6b63
+guid: d22ae2974df9ef34f84115a1fb47daa5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9028087476897026612
-    second: walkingdog_0
+      213: -5346458926499209022
+    second: phonedoggo_0
   - first:
-      213: 3096281448283122035
-    second: walkingdog_1
+      213: 2520622043588340941
+    second: phonedoggo_1
   - first:
-      213: -3148030581698958682
-    second: walkingdog_2
+      213: 5074569974020328948
+    second: phonedoggo_2
   - first:
-      213: 199974830054743530
-    second: walkingdog_3
+      213: 6450715605106987957
+    second: phonedoggo_3
   - first:
-      213: -7753571030125099345
-    second: walkingdog_4
+      213: 2506834931916548008
+    second: phonedoggo_4
   - first:
-      213: -5201884612148676012
-    second: walkingdog_5
+      213: 2358226677901306573
+    second: phonedoggo_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walkingdog_0
+      name: phonedoggo_0
       rect:
         serializedVersion: 2
         x: 0
@@ -123,14 +123,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43299953ab53a4d70800000000000000
-      internalID: 9028087476897026612
+      spriteID: 2c06ccfdeef8dc5b0800000000000000
+      internalID: -5346458926499209022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdog_1
+      name: phonedoggo_1
       rect:
         serializedVersion: 2
         x: 32
@@ -144,14 +144,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3792c89829338fa20800000000000000
-      internalID: 3096281448283122035
+      spriteID: dcc2a11d46c0bf220800000000000000
+      internalID: 2520622043588340941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdog_2
+      name: phonedoggo_2
       rect:
         serializedVersion: 2
         x: 64
@@ -165,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6aa64cb6dd2ff44d0800000000000000
-      internalID: -3148030581698958682
+      spriteID: 4fd4851518e7c6640800000000000000
+      internalID: 5074569974020328948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdog_3
+      name: phonedoggo_3
       rect:
         serializedVersion: 2
         x: 96
@@ -186,14 +186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aed9e656c0476c200800000000000000
-      internalID: 199974830054743530
+      spriteID: 5b3987d5aab858950800000000000000
+      internalID: 6450715605106987957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdog_4
+      name: phonedoggo_4
       rect:
         serializedVersion: 2
         x: 128
@@ -207,14 +207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa642a07a38c56490800000000000000
-      internalID: -7753571030125099345
+      spriteID: 8a72d6bb6111ac220800000000000000
+      internalID: 2506834931916548008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdog_5
+      name: phonedoggo_5
       rect:
         serializedVersion: 2
         x: 160
@@ -228,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45abe4a81813fc7b0800000000000000
-      internalID: -5201884612148676012
+      spriteID: dca282c4baa1ab020800000000000000
+      internalID: 2358226677901306573
       vertices: []
       indices: 
       edges: []
