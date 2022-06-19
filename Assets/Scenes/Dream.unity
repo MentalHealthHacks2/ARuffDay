@@ -426,11 +426,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8555768746012065206, guid: f5947de44217c65418d1c259abdd346f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -343
+      value: -275.7
       objectReference: {fileID: 0}
     - target: {fileID: 8555768746012065206, guid: f5947de44217c65418d1c259abdd346f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 167
+      value: 131.4
       objectReference: {fileID: 0}
     - target: {fileID: 8555768746012065206, guid: f5947de44217c65418d1c259abdd346f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1147,11 +1147,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3033667100432776850, guid: b54020c7a0802d242a5ac9ae02256f37, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -343
+      value: -275.7
       objectReference: {fileID: 0}
     - target: {fileID: 3033667100432776850, guid: b54020c7a0802d242a5ac9ae02256f37, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 205.5
+      value: 169.9
       objectReference: {fileID: 0}
     - target: {fileID: 3033667100432776850, guid: b54020c7a0802d242a5ac9ae02256f37, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2350,7 +2350,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697193181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 2.78, z: 0}
+  m_LocalPosition: {x: -1.5, y: 2.78, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2598,11 +2598,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3493816994230149325, guid: 6919b5cd6fd63e24699e53046c7152d8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -343
+      value: -275.7
       objectReference: {fileID: 0}
     - target: {fileID: 3493816994230149325, guid: 6919b5cd6fd63e24699e53046c7152d8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 245.69998
+      value: 210.09998
       objectReference: {fileID: 0}
     - target: {fileID: 3493816994230149325, guid: 6919b5cd6fd63e24699e53046c7152d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
