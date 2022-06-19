@@ -23,6 +23,14 @@ public class BadThoughtsSpawner : MonoBehaviour
     private float yAxis;
     private float xAxis;
 
+
+    private void Start()
+    {
+        healthBar.SetHealth(5);
+        hungerBar.SetHealth(7);
+        waterBar.SetHealth(6);
+    }
+
     public void StartGame()
     {
         timer.gameObject.SetActive(true);
@@ -33,9 +41,7 @@ public class BadThoughtsSpawner : MonoBehaviour
         yAxis = Input.GetAxis("Vertical");
         xAxis = Input.GetAxis("Horizontal");
 
-        healthBar.SetHealth(5);
-        hungerBar.SetHealth(7);
-        waterBar.SetHealth(6);
+        
     }
 
     void SpawnBadThoughts() {
